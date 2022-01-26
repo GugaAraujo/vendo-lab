@@ -1,0 +1,28 @@
+$titulo: rgb(9, 118, 243);
+$subtitulo: lighten($titulo, 30);
+$branco: white;
+$creme: blanchedalmond;
+$Sombra-creme: rgba(255, 235, 205, 0.843);
+$fundo-escuro: rgba(0, 0, 0, 0.694);
+$fundo-mais-escuro: darken($fundo-escuro, 30);
+
+@mixin small-only {
+    @media (max-width: 369.99px) {@content;}  
+}
+@mixin phone-only {
+    @media (min-width: 370px) and (max-width: 767.99px) {@content;}
+    
+}
+@mixin tablet-only {
+    @media (min-width: 768px) and (max-width: 899.99px) {@content;}
+    
+}
+@mixin desktop-only {
+    @media (min-width: 900px) {@content;}
+    
+}
+@mixin tv-only {
+    @media (min-width: 1400px) {@content;}
+    
+}
+
